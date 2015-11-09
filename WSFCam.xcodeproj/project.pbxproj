@@ -20,6 +20,7 @@
 		3825F64D1BEC9C660032196D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3825F64C1BEC9C660032196D /* AssetsLibrary.framework */; };
 		38E034421BF05949002620B4 /* WSCaptureSessionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */; };
 		518CB7941BF0BB970071B581 /* WSPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 518CB7931BF0BB970071B581 /* WSPermissionManager.m */; };
+		51B380B51BF0C07E0018C21A /* WSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B380B41BF0C07E0018C21A /* WSFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCaptureSessionCoordinator.m; sourceTree = "<group>"; };
 		518CB7921BF0BB970071B581 /* WSPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPermissionManager.h; sourceTree = "<group>"; };
 		518CB7931BF0BB970071B581 /* WSPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPermissionManager.m; sourceTree = "<group>"; };
+		51B380B31BF0C07E0018C21A /* WSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFileManager.h; sourceTree = "<group>"; };
+		51B380B41BF0C07E0018C21A /* WSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSFileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */,
 				518CB7921BF0BB970071B581 /* WSPermissionManager.h */,
 				518CB7931BF0BB970071B581 /* WSPermissionManager.m */,
+				51B380B31BF0C07E0018C21A /* WSFileManager.h */,
+				51B380B41BF0C07E0018C21A /* WSFileManager.m */,
 			);
 			path = WSFCam;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3825F61D1BEC99B90032196D /* ViewController.m in Sources */,
+				51B380B51BF0C07E0018C21A /* WSFileManager.m in Sources */,
 				3825F61A1BEC99B90032196D /* AppDelegate.m in Sources */,
 				38E034421BF05949002620B4 /* WSCaptureSessionCoordinator.m in Sources */,
 				518CB7941BF0BB970071B581 /* WSPermissionManager.m in Sources */,

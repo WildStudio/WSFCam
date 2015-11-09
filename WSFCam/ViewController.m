@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WSFileManager.h"
 #import "WSCaptureSessionCoordinator.h"
 #import "WSPermissionManager.h"
 
@@ -97,8 +98,8 @@
     _recording = NO;
     
     //Do something useful with the video file available at the outputFileURL
-    //IDFileManager *fm = [IDFileManager new];
-    //[fm copyFileToCameraRoll:outputFileURL];
+    WSFileManager *fm = [[WSFileManager alloc] init];
+    [fm copyFileToCameraRoll:outputFileURL];
     
     
     //Dismiss camera (when user taps cancel while camera is recording)
