@@ -19,6 +19,7 @@
 		3825F64B1BEC9C5D0032196D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3825F64A1BEC9C5D0032196D /* MobileCoreServices.framework */; };
 		3825F64D1BEC9C660032196D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3825F64C1BEC9C660032196D /* AssetsLibrary.framework */; };
 		38E034421BF05949002620B4 /* WSCaptureSessionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */; };
+		518CB7941BF0BB970071B581 /* WSPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 518CB7931BF0BB970071B581 /* WSPermissionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		3825F64C1BEC9C660032196D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		38E034401BF05949002620B4 /* WSCaptureSessionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCaptureSessionCoordinator.h; sourceTree = "<group>"; };
 		38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCaptureSessionCoordinator.m; sourceTree = "<group>"; };
+		518CB7921BF0BB970071B581 /* WSPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPermissionManager.h; sourceTree = "<group>"; };
+		518CB7931BF0BB970071B581 /* WSPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPermissionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				3825F6151BEC99B90032196D /* Supporting Files */,
 				38E034401BF05949002620B4 /* WSCaptureSessionCoordinator.h */,
 				38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */,
+				518CB7921BF0BB970071B581 /* WSPermissionManager.h */,
+				518CB7931BF0BB970071B581 /* WSPermissionManager.m */,
 			);
 			path = WSFCam;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				3825F61D1BEC99B90032196D /* ViewController.m in Sources */,
 				3825F61A1BEC99B90032196D /* AppDelegate.m in Sources */,
 				38E034421BF05949002620B4 /* WSCaptureSessionCoordinator.m in Sources */,
+				518CB7941BF0BB970071B581 /* WSPermissionManager.m in Sources */,
 				3825F6171BEC99B90032196D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

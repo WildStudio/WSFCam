@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WSCaptureSessionCoordinator.h"
+#import "WSPermissionManager.h"
 
 @interface ViewController ()
 
@@ -68,8 +69,7 @@
 
 - (void)checkPermissions
 {
-	/*
-    IDPermissionsManager *pm = [IDPermissionsManager new];
+    WSPermissionManager *pm = [[WSPermissionManager alloc] init];
     [pm checkCameraAuthorizationStatusWithBlock:^(BOOL granted) {
         if(!granted){
             NSLog(@"we don't have permission to use the camera");
@@ -80,10 +80,9 @@
             NSLog(@"we don't have permission to use the microphone");
         }
     }];
-	 */
 }
 
-#pragma mark = IDCaptureSessionCoordinatorDelegate methods
+#pragma mark = WSCaptureSessionCoordinatorDelegate methods
 
 - (void)coordinatorDidBeginRecording:(WSCaptureSessionCoordinator *)coordinator
 {
