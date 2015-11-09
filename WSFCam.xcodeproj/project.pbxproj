@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3825F6171BEC99B90032196D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825F6161BEC99B90032196D /* main.m */; };
+		3825F61A1BEC99B90032196D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825F6191BEC99B90032196D /* AppDelegate.m */; };
+		3825F61D1BEC99B90032196D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825F61C1BEC99B90032196D /* ViewController.m */; };
+		3825F6201BEC99B90032196D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3825F61E1BEC99B90032196D /* Main.storyboard */; };
+		3825F6221BEC99B90032196D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3825F6211BEC99B90032196D /* Assets.xcassets */; };
+		3825F6251BEC99B90032196D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3825F6231BEC99B90032196D /* LaunchScreen.storyboard */; };
+		3825F6301BEC99B90032196D /* WSFCamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825F62F1BEC99B90032196D /* WSFCamTests.m */; };
+		3825F63B1BEC99B90032196D /* WSFCamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825F63A1BEC99B90032196D /* WSFCamUITests.m */; };
+		3825F6491BEC9C2F0032196D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3825F6481BEC9C2F0032196D /* AVFoundation.framework */; };
+		3825F64B1BEC9C5D0032196D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3825F64A1BEC9C5D0032196D /* MobileCoreServices.framework */; };
+		3825F64D1BEC9C660032196D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3825F64C1BEC9C660032196D /* AssetsLibrary.framework */; };
+		38E034421BF05949002620B4 /* WSCaptureSessionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3825F62C1BEC99B90032196D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3825F60A1BEC99B90032196D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3825F6111BEC99B90032196D;
+			remoteInfo = WSFCam;
+		};
+		3825F6371BEC99B90032196D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3825F60A1BEC99B90032196D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3825F6111BEC99B90032196D;
+			remoteInfo = WSFCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3825F6121BEC99B90032196D /* WSFCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSFCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3825F6161BEC99B90032196D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3825F6181BEC99B90032196D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3825F6191BEC99B90032196D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3825F61B1BEC99B90032196D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3825F61C1BEC99B90032196D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3825F61F1BEC99B90032196D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3825F6211BEC99B90032196D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3825F6241BEC99B90032196D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3825F6261BEC99B90032196D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3825F62B1BEC99B90032196D /* WSFCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSFCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3825F62F1BEC99B90032196D /* WSFCamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSFCamTests.m; sourceTree = "<group>"; };
+		3825F6311BEC99B90032196D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3825F6361BEC99B90032196D /* WSFCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSFCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3825F63A1BEC99B90032196D /* WSFCamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSFCamUITests.m; sourceTree = "<group>"; };
+		3825F63C1BEC99B90032196D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3825F6481BEC9C2F0032196D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3825F64A1BEC9C5D0032196D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3825F64C1BEC9C660032196D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		38E034401BF05949002620B4 /* WSCaptureSessionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCaptureSessionCoordinator.h; sourceTree = "<group>"; };
+		38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCaptureSessionCoordinator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3825F60F1BEC99B90032196D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3825F64D1BEC9C660032196D /* AssetsLibrary.framework in Frameworks */,
+				3825F64B1BEC9C5D0032196D /* MobileCoreServices.framework in Frameworks */,
+				3825F6491BEC9C2F0032196D /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3825F6281BEC99B90032196D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3825F6331BEC99B90032196D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3825F6091BEC99B90032196D = {
+			isa = PBXGroup;
+			children = (
+				3825F64C1BEC9C660032196D /* AssetsLibrary.framework */,
+				3825F64A1BEC9C5D0032196D /* MobileCoreServices.framework */,
+				3825F6481BEC9C2F0032196D /* AVFoundation.framework */,
+				3825F6141BEC99B90032196D /* WSFCam */,
+				3825F62E1BEC99B90032196D /* WSFCamTests */,
+				3825F6391BEC99B90032196D /* WSFCamUITests */,
+				3825F6131BEC99B90032196D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3825F6131BEC99B90032196D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3825F6121BEC99B90032196D /* WSFCam.app */,
+				3825F62B1BEC99B90032196D /* WSFCamTests.xctest */,
+				3825F6361BEC99B90032196D /* WSFCamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3825F6141BEC99B90032196D /* WSFCam */ = {
+			isa = PBXGroup;
+			children = (
+				3825F6181BEC99B90032196D /* AppDelegate.h */,
+				3825F6191BEC99B90032196D /* AppDelegate.m */,
+				3825F61B1BEC99B90032196D /* ViewController.h */,
+				3825F61C1BEC99B90032196D /* ViewController.m */,
+				3825F61E1BEC99B90032196D /* Main.storyboard */,
+				3825F6211BEC99B90032196D /* Assets.xcassets */,
+				3825F6231BEC99B90032196D /* LaunchScreen.storyboard */,
+				3825F6261BEC99B90032196D /* Info.plist */,
+				3825F6151BEC99B90032196D /* Supporting Files */,
+				38E034401BF05949002620B4 /* WSCaptureSessionCoordinator.h */,
+				38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */,
+			);
+			path = WSFCam;
+			sourceTree = "<group>";
+		};
+		3825F6151BEC99B90032196D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3825F6161BEC99B90032196D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3825F62E1BEC99B90032196D /* WSFCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				3825F62F1BEC99B90032196D /* WSFCamTests.m */,
+				3825F6311BEC99B90032196D /* Info.plist */,
+			);
+			path = WSFCamTests;
+			sourceTree = "<group>";
+		};
+		3825F6391BEC99B90032196D /* WSFCamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3825F63A1BEC99B90032196D /* WSFCamUITests.m */,
+				3825F63C1BEC99B90032196D /* Info.plist */,
+			);
+			path = WSFCamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3825F6111BEC99B90032196D /* WSFCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3825F63F1BEC99B90032196D /* Build configuration list for PBXNativeTarget "WSFCam" */;
+			buildPhases = (
+				3825F60E1BEC99B90032196D /* Sources */,
+				3825F60F1BEC99B90032196D /* Frameworks */,
+				3825F6101BEC99B90032196D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WSFCam;
+			productName = WSFCam;
+			productReference = 3825F6121BEC99B90032196D /* WSFCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3825F62A1BEC99B90032196D /* WSFCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3825F6421BEC99B90032196D /* Build configuration list for PBXNativeTarget "WSFCamTests" */;
+			buildPhases = (
+				3825F6271BEC99B90032196D /* Sources */,
+				3825F6281BEC99B90032196D /* Frameworks */,
+				3825F6291BEC99B90032196D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3825F62D1BEC99B90032196D /* PBXTargetDependency */,
+			);
+			name = WSFCamTests;
+			productName = WSFCamTests;
+			productReference = 3825F62B1BEC99B90032196D /* WSFCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3825F6351BEC99B90032196D /* WSFCamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3825F6451BEC99B90032196D /* Build configuration list for PBXNativeTarget "WSFCamUITests" */;
+			buildPhases = (
+				3825F6321BEC99B90032196D /* Sources */,
+				3825F6331BEC99B90032196D /* Frameworks */,
+				3825F6341BEC99B90032196D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3825F6381BEC99B90032196D /* PBXTargetDependency */,
+			);
+			name = WSFCamUITests;
+			productName = WSFCamUITests;
+			productReference = 3825F6361BEC99B90032196D /* WSFCamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3825F60A1BEC99B90032196D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = WildStudio;
+				TargetAttributes = {
+					3825F6111BEC99B90032196D = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					3825F62A1BEC99B90032196D = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3825F6111BEC99B90032196D;
+					};
+					3825F6351BEC99B90032196D = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 3825F6111BEC99B90032196D;
+					};
+				};
+			};
+			buildConfigurationList = 3825F60D1BEC99B90032196D /* Build configuration list for PBXProject "WSFCam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3825F6091BEC99B90032196D;
+			productRefGroup = 3825F6131BEC99B90032196D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3825F6111BEC99B90032196D /* WSFCam */,
+				3825F62A1BEC99B90032196D /* WSFCamTests */,
+				3825F6351BEC99B90032196D /* WSFCamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3825F6101BEC99B90032196D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3825F6251BEC99B90032196D /* LaunchScreen.storyboard in Resources */,
+				3825F6221BEC99B90032196D /* Assets.xcassets in Resources */,
+				3825F6201BEC99B90032196D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3825F6291BEC99B90032196D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3825F6341BEC99B90032196D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3825F60E1BEC99B90032196D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3825F61D1BEC99B90032196D /* ViewController.m in Sources */,
+				3825F61A1BEC99B90032196D /* AppDelegate.m in Sources */,
+				38E034421BF05949002620B4 /* WSCaptureSessionCoordinator.m in Sources */,
+				3825F6171BEC99B90032196D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3825F6271BEC99B90032196D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3825F6301BEC99B90032196D /* WSFCamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3825F6321BEC99B90032196D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3825F63B1BEC99B90032196D /* WSFCamUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3825F62D1BEC99B90032196D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3825F6111BEC99B90032196D /* WSFCam */;
+			targetProxy = 3825F62C1BEC99B90032196D /* PBXContainerItemProxy */;
+		};
+		3825F6381BEC99B90032196D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3825F6111BEC99B90032196D /* WSFCam */;
+			targetProxy = 3825F6371BEC99B90032196D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3825F61E1BEC99B90032196D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3825F61F1BEC99B90032196D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3825F6231BEC99B90032196D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3825F6241BEC99B90032196D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3825F63D1BEC99B90032196D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3825F63E1BEC99B90032196D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3825F6401BEC99B90032196D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WSFCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WildStudio.WSFCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3825F6411BEC99B90032196D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WSFCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WildStudio.WSFCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3825F6431BEC99B90032196D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WSFCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WildStudio.WSFCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSFCam.app/WSFCam";
+			};
+			name = Debug;
+		};
+		3825F6441BEC99B90032196D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WSFCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WildStudio.WSFCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSFCam.app/WSFCam";
+			};
+			name = Release;
+		};
+		3825F6461BEC99B90032196D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WSFCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WildStudio.WSFCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WSFCam;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3825F6471BEC99B90032196D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WSFCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WildStudio.WSFCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WSFCam;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3825F60D1BEC99B90032196D /* Build configuration list for PBXProject "WSFCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3825F63D1BEC99B90032196D /* Debug */,
+				3825F63E1BEC99B90032196D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3825F63F1BEC99B90032196D /* Build configuration list for PBXNativeTarget "WSFCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3825F6401BEC99B90032196D /* Debug */,
+				3825F6411BEC99B90032196D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3825F6421BEC99B90032196D /* Build configuration list for PBXNativeTarget "WSFCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3825F6431BEC99B90032196D /* Debug */,
+				3825F6441BEC99B90032196D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3825F6451BEC99B90032196D /* Build configuration list for PBXNativeTarget "WSFCamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3825F6461BEC99B90032196D /* Debug */,
+				3825F6471BEC99B90032196D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3825F60A1BEC99B90032196D /* Project object */;
+}
