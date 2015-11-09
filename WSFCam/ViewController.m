@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "WSCaptureSessionCoordinator.h"
 
 @interface ViewController ()
 
-@property (nonatomic, strong) IDCaptureSessionCoordinator *captureSessionCoordinator;
+@property (nonatomic, strong) WSCaptureSessionCoordinator *captureSessionCoordinator;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *recordButton;
 
 @property (nonatomic, assign) BOOL recording;
@@ -32,8 +33,18 @@
 - (IBAction)toggleRecording:(id)sender
 {
     if(self.recording){
-        [self.ca]
-    }
+			[_captureSessionCoordinator stopRecording];
+		}else{
+			// Disable the idle timer while recording
+			[UIApplication sharedApplication].idleTimerDisabled = YES;
+				
+			self.recordButton.enabled = NO; // re-enabled once recording has finished starting
+			self.recordButton.title = @"Stop";
+				
+			[self.captureSessionCoordinator startRecording];
+				
+			_recording = YES;
+		}
 }
 
 
@@ -57,6 +68,7 @@
 
 - (void)checkPermissions
 {
+	/*
     IDPermissionsManager *pm = [IDPermissionsManager new];
     [pm checkCameraAuthorizationStatusWithBlock:^(BOOL granted) {
         if(!granted){
@@ -68,16 +80,17 @@
             NSLog(@"we don't have permission to use the microphone");
         }
     }];
+	 */
 }
 
 #pragma mark = IDCaptureSessionCoordinatorDelegate methods
 
-- (void)coordinatorDidBeginRecording:(IDCaptureSessionCoordinator *)coordinator
+- (void)coordinatorDidBeginRecording:(WSCaptureSessionCoordinator *)coordinator
 {
     _recordButton.enabled = YES;
 }
 
-- (void)coordinator:(IDCaptureSessionCoordinator *)coordinator didFinishRecordingToOutputFileURL:(NSURL *)outputFileURL error:(NSError *)error
+- (void)coordinator:(WSCaptureSessionCoordinator *)coordinator didFinishRecordingToOutputFileURL:(NSURL *)outputFileURL error:(NSError *)error
 {
     [UIApplication sharedApplication].idleTimerDisabled = NO;
     
@@ -85,8 +98,8 @@
     _recording = NO;
     
     //Do something useful with the video file available at the outputFileURL
-    IDFileManager *fm = [IDFileManager new];
-    [fm copyFileToCameraRoll:outputFileURL];
+    //IDFileManager *fm = [IDFileManager new];
+    //[fm copyFileToCameraRoll:outputFileURL];
     
     
     //Dismiss camera (when user taps cancel while camera is recording)
@@ -94,6 +107,5 @@
         [self stopPipelineAndDismiss];
     }
 }
-
 
 @end
