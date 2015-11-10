@@ -34,5 +34,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Capture Session View Controller-->
+        <scene sceneID="UF2-mK-aZp">
+            <objects>
+                <viewController storyboardIdentifier="captureSessionVC" id="gH6-U1-wr1" customClass="WSCaptureSessionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2gJ-zK-0mK"/>
+                        <viewControllerLayoutGuide type="bottom" id="xKC-7h-czx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ji-pG-YcS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avq-oB-lBi">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Close" id="KHK-IO-Otb">
+                                        <connections>
+                                            <action selector="closeCamera:" destination="gH6-U1-wr1" id="2Fa-y4-Lrg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vyG-MW-Cfb"/>
+                                    <barButtonItem title="Record" id="1XW-0E-lZ7" colorLabel="IBBuiltInLabel-Red">
+                                        <connections>
+                                            <action selector="toggleRecording:" destination="gH6-U1-wr1" id="VR1-Sy-KZO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="recordButton" destination="1XW-0E-lZ7" id="3ZU-HB-CDo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MH5-2K-l6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="283"/>
+        </scene>
     </scenes>
 </document>

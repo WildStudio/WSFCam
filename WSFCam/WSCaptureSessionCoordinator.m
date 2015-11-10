@@ -7,12 +7,13 @@
 //
 
 #import "WSCaptureSessionCoordinator.h"
+#import "WSFileManager.h"
 
 @interface WSCaptureSessionCoordinator ()
 
 @property (nonatomic, strong) dispatch_queue_t sessionQueue;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
-
+@property (nonatomic, strong) AVCaptureMovieFileOutput *movieFileOutput;
 @end
 @implementation WSCaptureSessionCoordinator
 
