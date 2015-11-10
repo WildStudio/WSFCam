@@ -99,7 +99,7 @@
     
     //Do something useful with the video file available at the outputFileURL
     WSFileManager *fm = [[WSFileManager alloc] init];
-    [fm copyFileToCameraRoll:outputFileURL];
+    [fm writeFileToCameraRoll:outputFileURL];
     
     
     //Dismiss camera (when user taps cancel while camera is recording)

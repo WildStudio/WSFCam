@@ -11,8 +11,6 @@
 @interface WSFileManager : NSObject
 
 - (NSURL *) tempFileURL;
-- (void) removeFile:(NSURL *)outputFileURL;
-- (void) copyFileToDocuments:(NSURL *)fileURL;
-- (void) copyFileToCameraRoll:(NSURL *)fileURL;
+- (void) writeFileToCameraRoll:(NSURL *)fileURL;
 
 @end

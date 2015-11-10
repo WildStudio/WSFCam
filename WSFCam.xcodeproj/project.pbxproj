@@ -21,6 +21,7 @@
 		38E034421BF05949002620B4 /* WSCaptureSessionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E034411BF05949002620B4 /* WSCaptureSessionCoordinator.m */; };
 		518CB7941BF0BB970071B581 /* WSPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 518CB7931BF0BB970071B581 /* WSPermissionManager.m */; };
 		51B380B51BF0C07E0018C21A /* WSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B380B41BF0C07E0018C21A /* WSFileManager.m */; };
+		51CAC4531BF22C5D0049C85B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CAC4521BF22C5D0049C85B /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		518CB7931BF0BB970071B581 /* WSPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPermissionManager.m; sourceTree = "<group>"; };
 		51B380B31BF0C07E0018C21A /* WSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSFileManager.h; sourceTree = "<group>"; };
 		51B380B41BF0C07E0018C21A /* WSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSFileManager.m; sourceTree = "<group>"; };
+		51CAC4521BF22C5D0049C85B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CAC4531BF22C5D0049C85B /* Photos.framework in Frameworks */,
 				3825F64D1BEC9C660032196D /* AssetsLibrary.framework in Frameworks */,
 				3825F64B1BEC9C5D0032196D /* MobileCoreServices.framework in Frameworks */,
 				3825F6491BEC9C2F0032196D /* AVFoundation.framework in Frameworks */,
@@ -99,6 +102,7 @@
 		3825F6091BEC99B90032196D = {
 			isa = PBXGroup;
 			children = (
+				51CAC4521BF22C5D0049C85B /* Photos.framework */,
 				3825F64C1BEC9C660032196D /* AssetsLibrary.framework */,
 				3825F64A1BEC9C5D0032196D /* MobileCoreServices.framework */,
 				3825F6481BEC9C2F0032196D /* AVFoundation.framework */,
