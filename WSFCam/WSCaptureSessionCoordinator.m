@@ -39,7 +39,15 @@
             _delegateCallbackQueue = delegateCallbackQueue;
         }
     }
+}
 
+
+- (AVCaptureVideoPreviewLayer *)previewLayer
+{
+    if(!_previewLayer && _captureSession){
+        _previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_captureSession];
+    }
+    return _previewLayer;
 }
 
 - (void)startRunning
@@ -73,7 +81,7 @@
 
 - (AVCaptureSession *)setupCaptureSession
 {
-	AVCaptureSession *captureSession = [AVCaptureSession new];
+	AVCaptureSession *captureSession = [[AVCaptureSession alloc] init];
 	
 	if(![self addDefaultCameraInputToCaptureSession:captureSession]){
 		NSLog(@"failed to add camera input to capture session");
